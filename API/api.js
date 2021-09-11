@@ -8,6 +8,6 @@ app.use('/auth', require('./routes/auth'));
 app.use('/employees', jwt.verify, require('./routes/employees'));
 app.use('/stations', jwt.verify, require('./routes/stations'));
 app.use('/bills', jwt.verify, require('./routes/bills'));
-app.use('/testApi', jwt.verify, require('./routes/testApi'));
+app.use('/testApi', require('./routes/testApi'));
 
 module.exports = app;
